@@ -5,6 +5,7 @@
 
 class Container;
 class VectorContainer;
+class ListContainer;
 
 class Sort {
     public:

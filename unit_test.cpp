@@ -14,6 +14,8 @@
 #include "pow_test.hpp"
 #include "VectorContainer_Test.hpp"
 #include "SelectionSort_Test.hpp"
+#include "bubble_test.hpp"
+#include "list_test.hpp"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
