@@ -4,7 +4,7 @@
 #include "gtest/gtest.h"
 #include "base.hpp"
 #include "op.hpp"
-#include "VectorContainer.hpp"
+#include "VectorContainer.cpp"
 #include "mult.hpp"
 #include <string>
 #include "sub.hpp"
@@ -41,8 +41,9 @@ TEST(VectorContainerTest, SwapTest)
 	VectorContainer* v1 = new VectorContainer();
 	v1->add_element(op1);
 	v1->add_element(op2);
+	EXPECT_EQ(1, (v1->at(1))->evaluate());
 	v1->swap(0,1);
-	EXPECT_EQ(op1, v1->at(1));
+	EXPECT_EQ(-3, (v1->at(1))->evaluate());
 
 }
 

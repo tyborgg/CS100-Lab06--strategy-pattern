@@ -13,6 +13,8 @@
 #include "sub_test.hpp"
 #include "pow_test.hpp"
 #include "VectorContainer_Test.hpp"
+#include "SelectionSort_Test.hpp"
+
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
